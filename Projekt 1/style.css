@@ -1,5 +1,7 @@
 /* CSS Document */
 
+/* Kopfleist */
+
 header {
     position: sticky;
     top: 0px;
@@ -62,6 +64,18 @@ div.container {
    #clip:hover{
     -webkit-filter: grayscale(100%);filter: grayscale(100%);
 }
-   
+
+/* Fußleiste */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:white ;
+  color: black ;
+  text-align: center;
+  border-top: 1px solid rgb(201, 201, 201);
+}
  
 
