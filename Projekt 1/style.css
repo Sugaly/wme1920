@@ -1,57 +1,87 @@
-/* CSS Document */
+/* Clearfix */
 
-* {
-    box-sizing: border-box;
-  }
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
 
-/* Kopfleist */
+/* Basic Styles */
+
+body {
+    background-color: white;
+    font-size: 13pt;
+    font-family: Roboto;
+    line-height: 1.45;
+    }
+
+    .test {
+        margin: 0 auto;
+        width: 1200px;
+        max-width: 100%;
+    }
+
+/* Header */
 
 header {
     position: sticky;
     top: 0px;
-    left: 0;
     background-image: linear-gradient(rgb(167, 163, 163), white);
     width: 100%; 
     height: 80px; 
-    border-bottom: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid #ccc;
+    
 }
 
-nav {
-position: absolute;
-left: 3em;
-}
-
-ul.topnav {
+    
+nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    width: 768px;
+	padding: 0;
+    margin-left: 182px;
+    margin-top: 0px;
     overflow: hidden;
     display: inline-block;
-    }
-
-li.navli {
+}
+nav li {
     float: left;
-    border-right: 1px solid rgb(201, 201, 201);
-    }
+}
 
-li.navli a {
+nav li a {
+	border-right: 1px solid #ccc;
+    box-sizing:border-box;
     display: inline-block;
     text-align: center;
+    font-size: 9pt;
     vertical-align: top;
     padding: 31px 20px;
     text-decoration: none;
-    }
+}
 
-li.navli:first-child {
+nav li a:first-child {
     border-left: 1px solid #ccc;
 }
 
-li.navli a:hover {
-   background-image:linear-gradient(rgb(121, 120, 120), white);
-   border-bottom: 1px solid rgb(201, 201, 201);
+nav a:link, nav a:visited
+{color: rgb(83, 81, 81);
+    }
+
+nav a:hover, nav a:active {
+    background-image:linear-gradient(rgb(121, 120, 120), white);
+    border-bottom: 1px solid #ccc;
+    color: black;
+}
+nav a#pull {
+	display: none;
 }
 
-/* logo */
+logo 
 
 div.container {
     display: inline-block;
@@ -64,18 +94,19 @@ div.container {
   #clip {
     position: absolute;
     clip: rect(0, 160px, 80px, 0);
-    /* clip: shape(top, right, bottom, left) */
+    /* clip: shape(top, right, bottom, left)*/
    }
 
    #clip:hover{
     -webkit-filter: grayscale(100%);filter: grayscale(100%);
 }
 
-/* Textbox */
+
+/* Textbox*/
 
 h1 {
-    margin-left: 1em;
-    font: normal normal 300 3em/140% "Roboto", Tahoma, Geneva, "Trebuchet MS", Helvetica, sans-serif;
+    margin-left: 1.5em;
+    
 }
 
 .textbox {
@@ -90,39 +121,55 @@ h1 {
     column-width: 31%;
 }
 
+
+@media only screen and (max-width: 767px) {
+
+	
+}
+
+@media only screen and (min-width: 768px ) {
+	
+}
+
+@media only screen and (min-width: 1200px ) {
+	
+}
+
+
+
+
 /* Fußleiste */
 
+* {
+    box-sizing: border-box;
+  }
 
 
-  footer {
-    left: 3em;
-    position: fixed;
+    footer {
+    left: 4em;
     bottom: 0;
     width: 93%;
+    position: relative;
     border-top: 1px solid rgb(201, 201, 201);
     background-color:white ;
     color: black ;
-    font-size: .9em;
-  }
+    font-size: 9pt;
+    }
   
-  .box {
+    .box {
     float: left;
     width: 50%;
     padding: 10px;
-  }
+    }
 
-  .box2 {
+    .box2 {
     float: left;
     width: 50%;
     padding: 10px;
     text-align: right;
-    }
+        }
   
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+
 
 
 
