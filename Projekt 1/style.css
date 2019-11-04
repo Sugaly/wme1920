@@ -27,6 +27,15 @@ body {
         max-width: 100%;
     }
 
+    a {
+        color: #70cf2b;
+    }
+    
+    a:hover {
+        color: #488d17;
+        text-decoration: none;
+    }
+
 /* Header */
 
 header {
@@ -44,7 +53,6 @@ nav ul {
     list-style-type: none;
     width: 768px;
 	padding: 0;
-    margin-left: 182px;
     margin-top: 0px;
     overflow: hidden;
     display: inline-block;
@@ -58,9 +66,9 @@ nav li a {
     box-sizing:border-box;
     display: inline-block;
     text-align: center;
-    font-size: 9pt;
+    font-size: 11pt;
     vertical-align: top;
-    padding: 31px 20px;
+    padding: 29px 20px;
     text-decoration: none;
 }
 
@@ -81,7 +89,7 @@ nav a#pull {
 	display: none;
 }
 
-logo 
+/* logo */ 
 
 div.container {
     display: inline-block;
@@ -104,36 +112,39 @@ div.container {
 
 /* Textbox*/
 
-h1 {
-    margin-left: 1.5em;
-    
-}
-
 .textbox {
+    font-size: 10.5pt;
     border: 1px solid rgb(201, 201, 201);
     border-top: 1px solid darkgreen;
-    margin-left: 3em;
-    margin-right: 3em;
     padding: 1em;
     box-shadow: 0px 2px rgb(230, 216, 216);
-    width: 93%;
+    width: 100%;
     column-count: 3;
     column-width: 31%;
 }
 
 
+/* Smartphone */
 @media only screen and (max-width: 767px) {
 
+    .textbox {
+        column-count: 1;
+        column-width: 100%;
+    }
+
 	
 }
 
-@media only screen and (min-width: 768px ) {
+@media only screen and (min-width: 768px ) and (max-width: 1199px) {
+   
+    .textbox {
+        column-count: 2;
+        column-width: 50%;
+    }
 	
 }
 
-@media only screen and (min-width: 1200px ) {
-	
-}
+
 
 
 
@@ -146,9 +157,8 @@ h1 {
 
 
     footer {
-    left: 4em;
     bottom: 0;
-    width: 93%;
+    width: 100%;
     position: relative;
     border-top: 1px solid rgb(201, 201, 201);
     background-color:white ;
