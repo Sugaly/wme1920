@@ -1,5 +1,9 @@
 /* CSS Document */
 
+* {
+    box-sizing: border-box;
+  }
+
 /* Kopfleist */
 
 header {
@@ -44,6 +48,7 @@ li.navli:first-child {
 
 li.navli a:hover {
    background-image:linear-gradient(rgb(121, 120, 120), white);
+   border-bottom: 1px solid rgb(201, 201, 201);
 }
 
 /* logo */
@@ -66,11 +71,28 @@ div.container {
     -webkit-filter: grayscale(100%);filter: grayscale(100%);
 }
 
+/* Textbox */
+
+h1 {
+    margin-left: 1em;
+    font: normal normal 300 3em/140% "Roboto", Tahoma, Geneva, "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.textbox {
+    border: 1px solid rgb(201, 201, 201);
+    border-top: 1px solid darkgreen;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 1em;
+    box-shadow: 0px 2px rgb(230, 216, 216);
+    width: 93%;
+    column-count: 3;
+    column-width: 31%;
+}
+
 /* Fußleiste */
 
-* {
-    box-sizing: border-box;
-  }
+
 
   footer {
     left: 3em;
