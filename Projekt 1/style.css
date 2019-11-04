@@ -1,49 +1,101 @@
-/* CSS Document */
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* Basic Styles */
+
+body {
+    background-color: white;
+    font-size: 13pt;
+    font-family: Roboto;
+    line-height: 1.45;
+    }
+
+    .test {
+        margin: 0 auto;
+        width: 1200px;
+        max-width: 100%;
+    }
+
+    a {
+        color: #70cf2b;
+    }
+    
+    a:hover {
+        color: #488d17;
+        text-decoration: none;
+    }
+
+/* Header */
 
 header {
     position: sticky;
     top: 0px;
     background-image: linear-gradient(rgb(167, 163, 163), white);
-    width: 99%; 
+    width: 100%; 
     height: 80px; 
-    border-bottom: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid #ccc;
+    transition: background-image 2s;
+    
 }
 
-nav {
-position: relative;
-left: 90px;
-}
-
-ul.topnav {
+    
+nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin-top: 0px;
     overflow: hidden;
     display: inline-block;
-    }
+}
 
-li.navli {
+nav li {
     float: left;
-    border-right: 1px solid rgb(201, 201, 201);
-    }
+}
 
-li.navli a {
+nav li a {
+	border-right: 1px solid #ccc;
+    box-sizing:border-box;
     display: inline-block;
     text-align: center;
+    font-size: 11pt;
     vertical-align: top;
-    padding: 31px 20px;
+    padding: 29px 20px;
     text-decoration: none;
-    }
+}
 
-li.navli:first-child {
+nav li a:first-child {
     border-left: 1px solid #ccc;
 }
 
-li.navli a:hover {
-   background-image:linear-gradient(rgb(121, 120, 120), white);
+nav a:link, nav a:visited {
+    color: rgb(83, 81, 81);
+    }
+
+nav a:hover, nav a:active {
+    background-image:linear-gradient(rgb(121, 120, 120), white);
+    border-bottom: 1px solid #ccc;
+    color: black;
 }
 
-/* logo */
+div.dropdown {
+    display: none;
+    }
+
+.dropdown-content {
+    display: none;
+}
+
+/* logo */ 
 
 div.container {
     display: inline-block;
@@ -53,15 +105,146 @@ div.container {
     width: 180px;
     height: 79px;
   }
+
   #clip {
     position: absolute;
     clip: rect(0, 160px, 80px, 0);
-    /* clip: shape(top, right, bottom, left) */
+    /* clip: shape(top, right, bottom, left)*/
    }
 
-   #clip:hover{
+   #clip:hover {
     -webkit-filter: grayscale(100%);filter: grayscale(100%);
 }
-   
- 
 
+
+/* Textbox*/
+
+.textbox {
+    font-size: 10.5pt;
+    border: 1px solid rgb(201, 201, 201);
+    border-top: 1px solid darkgreen;
+    padding: 1em;
+    box-shadow: 0px 2px rgb(230, 216, 216);
+    width: 100%;
+    column-count: 3;
+    column-width: 31%;
+}
+
+
+/* Smartphone */
+@media only screen and (max-width: 767px) {
+
+    .textbox {
+        column-count: 1;
+        column-width: 100%;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+      }
+
+      nav a:hover, nav a:active {
+        background-image: none;
+        border-bottom: none;
+        color: black;
+        }
+
+     div.dropdown {
+        display: inline-block;
+        width: 80px;
+        height: 79px;
+        float: right;
+        margin-right: 0.5em;
+        background-color: none;
+        position: relative;
+        text-align: right;
+    }
+       
+    .dropbtn {
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        height: 79px;
+        width: 75px;
+        background-image: linear-gradient(rgb(167, 163, 163), white);
+      }
+              
+      .dropdown-content {
+        text-align: left;
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        min-width: 250px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1;}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+    }
+
+/*Tablet */
+
+@media only screen and (min-width: 768px ) and (max-width: 1199px) {
+   
+    .textbox {
+        column-count: 2;
+        column-width: 50%;
+    }
+    
+    nav li a {
+        border-right: 1px solid #ccc;
+        box-sizing:border-box;
+        display: inline-block;
+        text-align: center;
+        font-size: 9pt;
+        vertical-align: top;
+        padding: 31px 14px;
+        text-decoration: none;
+    }
+
+}
+
+
+/* Fußleiste */
+
+* {
+    box-sizing: border-box;
+  }
+
+
+    footer {
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    border-top: 1px solid rgb(201, 201, 201);
+    background-color:white ;
+    color: black ;
+    font-size: 9pt;
+    }
+  
+    .box {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    }
+
+    .box2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: right;
+    }
