@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
@@ -9,11 +9,12 @@
 	<meta name="author" content="Laura Dietrich, Anna Bezold">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="html5reset.css" type="text/css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic'
 		rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 </head>
 
@@ -22,12 +23,11 @@
 		<nav class="test clearfix">
 			<div class="container">
 				<a href="#home">
-					<img id="clip" src="world_data_logo_v1.png" />
+					<img id="clip" src="world_data_logo_v1.png" alt="Logo World Data Overview" />
 				</a>
 			</div>
 
 			<ul class="clearfix">
-				<li></li>
 				<li><a href=""><i class="fa fa-list-ul"></i> A1 - Table</a></li>
 				<li><a href=""><i class="fa fa-list-ul"></i> A2 - Parse</a></li>
 				<li><a href=""><i class="fa fa-list-ul"></i> A2 - Save</a></li>
@@ -35,9 +35,24 @@
 				<li><a href=""><i class="fa fa-list-ul"></i> A3 - REST</a></li>
 				<li><a href=""><i class="fa fa-list-ul"></i> A4 - Vis</a></li>
 			</ul>
-			<a href="#" id="pull"><i class="fa fa-list-ul"></i></a>
+
+			<div class="dropdown">
+				<button class="dropbtn"><i class="fa fa-list-ul"></i></button>
+				<div class="dropdown-content">
+					<a href=""><i class="fa fa-list-ul"></i> A1 - Table</a>
+					<a href=""><i class="fa fa-list-ul"></i> A2 - Parse</a>
+					<a href=""><i class="fa fa-list-ul"></i> A2 - Save</a>
+					<a href=""><i class="fa fa-list-ul"></i> A2 - Print</a>
+					<a href=""><i class="fa fa-list-ul"></i> A3 - REST</a>
+					<a href=""><i class="fa fa-list-ul"></i> A4 - Vis</a>
+				</div>
+			</div>
+
+
 		</nav>
 	</header>
+
+
 
 
 	<div class="test">
@@ -75,7 +90,7 @@
 	</div>
 
 
-	<footer class = "test">
+	<footer class="test">
 		<div class="clearfix test">
 			<div class="box">
 				<p>
