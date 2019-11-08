@@ -48,7 +48,7 @@ header {
        
 }
 
-    
+   
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -152,7 +152,7 @@ div.container {
         }
 
      div.dropdown {
-        display: inline-block;
+        display: block;
         width: 80px;
         height: 79px;
         float: right;
