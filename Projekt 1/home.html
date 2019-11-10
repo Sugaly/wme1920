@@ -47,6 +47,7 @@
 					<a href=""><i class="fa fa-list-ul"></i> A4 - Vis</a>
 				</div>
 			</div>
+			
 
 
 		</nav>
@@ -88,7 +89,39 @@
 			</p>
 		</div>
 	</div>
-
+	
+	<div class = "test">
+		<p id = "show">Show/Hide: <u class = "grey" onclick = "show_hide_column(2)">GDP</u> | <u class = "grey" onclick = "show_hide_column(3)">Inflation</u> | <u class = "grey" onclick = "show_hide_column(4)">Birth rate</u> | <u class = "grey" onclick = "show_hide_column(5)">Electricity consumption</u> | <u onclick = "show_hide_column(6)"  class = "grey" >Military expenditure</u></p>
+		<table id = "myTable">
+			<colgroup>
+				<col>
+				<col>
+				<col id = s01 >
+				<col id = s02 >
+				<col id = s03 >
+				<col id = s04 >
+				<col id = s05 >
+			</colgroup>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Country<button class="buttontable" onclick="sortTableAsc()">
+				<i class="fas fa-angle-down greeniconcolor"></i></button>
+				<button class="buttontable" onclick="sortTableDesc()"><i class="fas fa-chevron-up greeniconcolor"></i></button></th>
+				<th>GDP</th>
+				<th>Inflation</th>
+				<th>Birth rate</th>
+				<th>Electricity consumption</th>
+				<th>Military Expenditure</th>
+			</tr>
+		</thead>
+		<tbody id = "tbd">
+		
+		</tbody>
+	</table>
+	<p id = "show">Show/Hide: <u class = "grey" onclick = "show_hide_column(2)">GDP</u> | <u class = "grey" onclick = "show_hide_column(3)">Inflation</u> | <u class = "grey" onclick = "show_hide_column(4)">Birth rate</u> | <u class = "grey" onclick = "show_hide_column(5)">Electricity consumption</u> | <u onclick = "show_hide_column(6)"  class = "grey" >Military expenditure</u></p>
+	</div>
+	
 	<footer class="test">
 		<div class="clearfix test">
 			<div class="box">
@@ -97,6 +130,8 @@
 					First course exercise <strong>HTML, CSS and JS</strong> of the lecture Web and Multimedia
 					Engineering.
 				</p>
+			</br>
+		</br>
 			</div>
 
 			<div class="box2">
@@ -107,6 +142,15 @@
 			</div>
 		</div>
 	</footer>
+	
+	<script type="text/javascript" src = "table.js"></script>
+	<script type="text/javascript">
+
+	createTable();
+	
+	
+	</script>
+
 </body>
 
 </html>

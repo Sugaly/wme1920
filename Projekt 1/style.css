@@ -132,6 +132,75 @@ div.container {
 }
 
 
+/* Table */
+
+table {
+	margin: 0 auto;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+	
+}
+
+tr:nth-child(even) {
+	background: #d8d8d8;
+}
+
+th, td {
+	padding: 10px;
+	
+}
+th {
+	border-bottom: 3px solid #d8d8d8;
+	
+}
+td {
+	font-size: 10.5pt;
+}
+
+#show {
+    font-size: 10.5pt;
+}
+
+
+u.grey {
+	color: #867b7b;
+	font-size: 10.5pt;
+}
+
+u:hover {
+    text-decoration: none;
+   }
+
+
+.buttontable{
+    background: none;
+    border: none;
+    width: 8px;
+}
+
+.greeniconcolor{
+    color: darkgreen;
+}
+
+#s01{
+    visibility: visible;
+}
+
+#s02{
+    visibility: visible;
+}
+#s03{
+    visibility: visible;
+}
+#s04{
+    visibility: visible;
+}
+#s05{
+    visibility: visible;
+}
+
+
 /* Smartphone */
 @media only screen and (max-width: 767px) {
 
@@ -195,6 +264,15 @@ div.container {
         display: block;
       }
       
+      #s05{
+        visibility: collapse;
+    }
+        
+     #s04{
+        visibility: collapse;
+    }
+        
+      
     }
 
 /*Tablet */
@@ -216,7 +294,13 @@ div.container {
         padding: 31px 14px;
         text-decoration: none;
     }
-
+    
+    #s05{
+        visibility: collapse;
+    }
+        
+	
+	
 }
 
 
@@ -249,3 +333,4 @@ div.container {
     padding: 10px;
     text-align: right;
     }
+
