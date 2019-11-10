@@ -195,6 +195,7 @@ div.container {
         display: block;
       }
       
+      
     }
 
 /*Tablet */
@@ -216,7 +217,9 @@ div.container {
         padding: 31px 14px;
         text-decoration: none;
     }
-
+	
+	
+	
 }
 
 
@@ -249,3 +252,45 @@ div.container {
     padding: 10px;
     text-align: right;
     }
+table {
+	margin: 0 auto;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+	
+}
+
+tr:nth-child(even) {
+	background: #d8d8d8;
+}
+
+th, td {
+	padding: 10px;
+	
+}
+th {
+	border-bottom: 3px solid #d8d8d8;
+	
+}
+td {
+	font-size: 10.5pt;
+}
+
+#show {
+	font-size: 10.5pt;
+}
+u.grey {
+	color: #d8d8d8;
+	font-size: 10.5pt;
+}
+
+
+.buttontable{
+    background: none;
+    border: none;
+    width: 8px;
+}
+
+.greeniconcolor{
+    color: darkgreen;
+}
