@@ -195,6 +195,14 @@ div.container {
         display: block;
       }
       
+      #s05{
+        visibility: collapse;
+    }
+        
+     #s04{
+        visibility: collapse;
+    }
+        
       
     }
 
@@ -217,7 +225,11 @@ div.container {
         padding: 31px 14px;
         text-decoration: none;
     }
-	
+    
+    #s05{
+        visibility: collapse;
+    }
+        
 	
 	
 }
@@ -252,6 +264,9 @@ div.container {
     padding: 10px;
     text-align: right;
     }
+
+/* Table */
+
 table {
 	margin: 0 auto;
 	text-align: left;
@@ -277,12 +292,18 @@ td {
 }
 
 #show {
-	font-size: 10.5pt;
+    font-size: 10.5pt;
 }
+
+
 u.grey {
-	color: #d8d8d8;
+	color: #867b7b;
 	font-size: 10.5pt;
 }
+
+u:hover {
+    text-decoration: none;
+   }
 
 
 .buttontable{
@@ -294,3 +315,8 @@ u.grey {
 .greeniconcolor{
     color: darkgreen;
 }
+
+.col{
+    visibility: visible;
+}
+    
